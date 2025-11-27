@@ -1,0 +1,47 @@
+Dataset Description
+
+This dataset contains anonymized behavioral and lifestyle indicators collected from a diverse group of participants. Each row represents an individual, along with various attributes related to their daily habits, personal background, activity involvement, and social engagement.
+
+The goal is to predict the participant’s personality cluster based on these observable behavioral patterns. The personality clusters are not labeled as good or bad; they simply represent different groups of behavioral tendencies derived through prior segmentation analysis.
+
+No real names, academic identifiers, or sensitive personal details are included. All fields have been renamed and anonymized to prevent identification and to ensure the dataset can be used safely for modeling and educational purposes.
+
+What the Data Represents
+
+Column Name Meaning
+
+participant_id Unique ID assigned to each participant
+
+record_code Internal reference code (irrelevant to prediction)
+
+age_group Age grouping indicator
+
+identity_code Encoded personal identity category
+
+cultural_background Regional or cultural background grouping
+
+upbringing_influence Influence of formative environment
+
+focus_intensity Time/effort dedicated toward focused tasks
+
+consistency_score Reliability and routine-stability measure
+
+external_guidance_usage Use of guidance, mentoring, or support resources
+
+support_environment_score Perceived supportive environment level
+
+hobby_engagement_level Engagement in leisure or personal interest activities
+
+physical_activity_index Physical activity involvement
+
+creative_expression_index Participation in artistic or expressive activities
+
+altruism_score Tendency toward volunteering or helping behaviors
+
+personality_cluster (target) Personality segment label derived externally
+
+Task
+
+Your task is to build a model that predicts the personality cluster of each participant based on the provided behavioral and lifestyle attributes.
+
+This is a multiclass classification problem. Since some personality clusters occur more frequently than others, the competition is evaluated using Macro F1 Score to ensure fairness across all classes.
